@@ -31,18 +31,18 @@ KERNEL_ZIP="RZ-$VARIANT-$(date +%y%m%d)-$HASH"
 export LOCALVERSION=~`echo $VER`
 export ARCH=arm64
 export SUBARCH=arm64
-export KBUILD_BUILD_USER=RenderZenith
-export KBUILD_BUILD_HOST=renderserver.net
+export KBUILD_BUILD_USER=shinakawa
+export KBUILD_BUILD_HOST=chandr1000.ga
 export LOCALVERSION=~`echo $KERNEL_ZIP`
 export CCACHE=ccache
 
 # Paths
 KERNEL_DIR=`pwd`
-KBUILD_OUTPUT="${KERNEL_DIR}/../out"
+KBUILD_OUTPUT="${KERNEL_DIR}/out"
 REPACK_DIR="${HOME}/android/source/kernel/AnyKernel2"
 PATCH_DIR="${HOME}/android/source/kernel/AnyKernel2/patch"
 MODULES_DIR="${HOME}/android/source/kernel/AnyKernel2/ramdisk/renderzenith/modules"
-ZIP_MOVE="${HOME}/android/source/zips/OP5-zips"
+ZIP_MOVE="${HOME}"
 ZIMAGE_DIR="$KBUILD_OUTPUT/arch/arm64/boot"
 
 # Functions
